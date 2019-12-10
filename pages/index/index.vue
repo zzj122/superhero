@@ -1,6 +1,18 @@
 <template>
-	<view class="content">
-		这是首页
+	<view class="page">
+		
+		<swiper :indicator-dots="true" :autoplay="true">
+			<swiper-item>
+				<view class="swiper-item"></view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item"></view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item"></view>
+			</swiper-item>
+		</swiper>
+		
 	</view>
 </template>
 
