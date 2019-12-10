@@ -7520,9 +7520,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!************************************************!*\
-  !*** /Users/a123/Desktop/superhero/pages.json ***!
-  \************************************************/
+/*!*********************************************!*\
+  !*** D:/html/exercise/superhero/pages.json ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8427,9 +8427,9 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 
 /***/ }),
 /* 7 */
-/*!*****************************************************************!*\
-  !*** /Users/a123/Desktop/superhero/pages.json?{"type":"style"} ***!
-  \*****************************************************************/
+/*!**************************************************************!*\
+  !*** D:/html/exercise/superhero/pages.json?{"type":"style"} ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8438,14 +8438,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 8 */
-/*!****************************************************************!*\
-  !*** /Users/a123/Desktop/superhero/pages.json?{"type":"stat"} ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** D:/html/exercise/superhero/pages.json?{"type":"stat"} ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "" };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__31827C0" };exports.default = _default;
 
 /***/ }),
 /* 9 */,
