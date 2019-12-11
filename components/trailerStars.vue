@@ -9,18 +9,10 @@
 		v-for="(gray, index) in grayScore"
 		src="../static/icons/Star-huise.png" 
 		class="star-ico"
-		:key="index"></image>
+		:key="'star2-' + index"></image>
 		<view class="movie-score" v-if="showNum == 1">
 			{{innerScore}}
 		</view>
-	<!-- 	<image src="../static/icons/Star-yellow.png" class="star-ico"></image>
-		<image src="../static/icons/Star-yellow.png" class="star-ico"></image>
-		<image src="../static/icons/Star-yellow.png" class="star-ico"></image>
-		<image src="../static/icons/Star-yellow.png" class="star-ico"></image>
-		<image src="../static/icons/Star-huise.png" class="star-ico"></image>
-		<view class="movie-score">
-			9.4
-		</view> -->
 	</view>
 </template>
 

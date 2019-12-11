@@ -112,3 +112,8 @@
 	font-size: 14px;
 	color: #feab2a;
 }
+
+.animation-opacity {
+	font-weight: bold;
+	opacity: 0;
+}

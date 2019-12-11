@@ -1,7 +1,7 @@
 <template>
 	<view class="page">
-<!-- 		<hello-comp myval="hello next~~~"></hello-comp>
-		<trailer-stars innerScore="5.1" showNum="1"></trailer-stars> -->
+<!-- 		<helloComp myval="hello next~~~"></helloComp>
+		<trailerStars innerScore="5.1" showNum="1"></trailerStars> -->
 		<!-- 轮播图 -->
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true" class="circular">
 			<swiper-item>
@@ -111,18 +111,18 @@
 						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
 					</view>
 				</view>
-				<view class="movie-oper">
+				<view class="movie-oper" @click="praiseMe">
 					<image src="../../static/icons/praise.png" class="praise-ico"></image>
 					<view class="praise-me">
 						赞一下
 					</view>
+					<view :animation="animationData" class="praise-me animation-opacity">
+						+1
+					</view>
 				</view>
 				
 			</view>
-			
 		</view>
-		
-
 	</view>
 </template>
 
@@ -133,9 +133,18 @@
 	export default {
 		data() {
 			return {
+				animationData: {}
 			}
 		},
+		onUnload() {
+			//页面卸载的时候  清除动画数据
+			this.animationData = {}
+		},
 		onLoad() {
+			//在页面创建的时候，创建一个临时动画
+			this.animation = uni.createAnimation()
+			
+			//获取后端数据
 			uni.request({
 			    url: 'https://www.imovietrailer.com/superhero/index/carousel/list',
 				method: "POST",
@@ -146,7 +155,22 @@
 			});
 		},
 		methods: {
-
+			//实现点赞动画效果
+			praiseMe() {
+				//构建动画数据，并且通过step来表示这组动画的完成
+				this.animation.translateY(-65).opacity(1).step({
+					duration:450
+					});
+				this.animationData = this.animation.export();
+				
+				//还原动画
+				setTimeout(function() {
+					this.animation.translateY(0).opacity(0).step({
+						duration: 0
+					});
+					this.animationData = this.animation.export();
+				}.bind(this), 500);
+			}
 		},
 		components: {
 			helloComp,
