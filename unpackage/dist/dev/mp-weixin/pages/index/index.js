@@ -440,7 +440,7 @@ var _default = { data: function data() {return { animationData: {}, animationDat
     this.animation = uni.createAnimation(); //获取后端数据
     uni.request({ url: 'https://www.imovietrailer.com/superhero/index/carousel/list', method: "POST", success: function success(res) {console.log(res.data);_this.text = 'request success';} });}, methods: { //实现点赞动画效果
     praiseMe: function praiseMe(e) {//构建动画数据，并且通过step来表示这组动画的完成
-      this.animation.translateY(-65).opacity(1).step({ duration: 450 });this.animationData = this.animation;this.animationDataArr[e] = this.animationData.export(); //还原动画
+      this.animation.translateY(-65).opacity(1).step({ duration: 400 });this.animationData = this.animation;this.animationDataArr[e] = this.animationData.export(); //还原动画
       setTimeout(function () {this.animation.translateY(0).opacity(0).step({ duration: 0 });this.animationData = this.animation;this.animationDataArr[e] = this.animationData.export();}.bind(this), 500);} }, components: { helloComp: _helloComp.default, trailerStars: _trailerStars.default } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

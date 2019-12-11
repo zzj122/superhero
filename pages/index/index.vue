@@ -108,7 +108,7 @@
 						2018 / 动作 / 科幻 / 奇幻
 					</view>
 					<view class="movie-info">
-						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
+						上映日期 : 2017-11-17(美国/中国大陆)
 					</view>
 				</view>
 				<view class="movie-oper" @click="praiseMe(0)">
@@ -132,7 +132,7 @@
 						2018 / 动作 / 科幻 / 冒险
 					</view>
 					<view class="movie-info">
-						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
+						上映日期 : 2016-05-06(中国大陆/美国) / 2016-04-12(加州首映)
 					</view>
 				</view>
 				<view class="movie-oper" @click="praiseMe(1)">
@@ -167,8 +167,11 @@
 			this.animationData = {}
 		},
 		onLoad() {
+			
+			// #ifdef APP-PLUS || MP-WEIXIN
 			//在页面创建的时候，创建一个临时动画
 			this.animation = uni.createAnimation()
+			//#endif
 			
 			//获取后端数据
 			uni.request({
@@ -183,9 +186,12 @@
 		methods: {
 			//实现点赞动画效果
 			praiseMe(e) {
+				
+				// #ifdef APP-PLUS || MP-WEIXIN
+				
 				//构建动画数据，并且通过step来表示这组动画的完成
 				this.animation.translateY(-65).opacity(1).step({
-					duration:450
+					duration:400
 					});
 				this.animationData = this.animation;
 				this.animationDataArr[e] = this.animationData.export();
@@ -198,6 +204,8 @@
 					this.animationData = this.animation
 					this.animationDataArr[e] = this.animationData.export();
 				}.bind(this), 500);
+				
+				//#endif
 			}
 		},
 		components: {
