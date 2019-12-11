@@ -7520,9 +7520,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!*********************************************!*\
-  !*** D:/html/exercise/superhero/pages.json ***!
-  \*********************************************/
+/*!************************************************!*\
+  !*** /Users/a123/Desktop/superhero/pages.json ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8427,20 +8427,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 
 /***/ }),
 /* 7 */
-/*!**************************************************************!*\
-  !*** D:/html/exercise/superhero/pages.json?{"type":"style"} ***!
-  \**************************************************************/
+/*!*****************************************************************!*\
+  !*** /Users/a123/Desktop/superhero/pages.json?{"type":"style"} ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": {} }, "pages/search/search": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "电影预告", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": { "hello-comp": "/components/helloComp" } }, "pages/search/search": { "usingComponents": {} }, "pages/mine/mine": { "usingComponents": {} }, "components/helloComp": { "usingComponents": {} }, "components/trailerStars": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "电影预告", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!*************************************************************!*\
-  !*** D:/html/exercise/superhero/pages.json?{"type":"stat"} ***!
-  \*************************************************************/
+/*!****************************************************************!*\
+  !*** /Users/a123/Desktop/superhero/pages.json?{"type":"stat"} ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

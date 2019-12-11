@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/search/search",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "components/helloComp",
+    "components/trailerStars"
   ],
   "subPackages": [],
   "window": {
@@ -37,5 +39,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap33.json"
 }

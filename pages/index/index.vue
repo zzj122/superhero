@@ -1,5 +1,7 @@
 <template>
 	<view class="page">
+<!-- 		<hello-comp myval="hello next~~~"></hello-comp>
+		<trailer-stars innerScore="5.1" showNum="1"></trailer-stars> -->
 		<!-- 轮播图 -->
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true" class="circular">
 			<swiper-item>
@@ -32,16 +34,7 @@
 					<view class="movie-name">
 						三少爷的剑
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							9.1
-						</view>
-					</view>
+					<trailer-stars innerScore="4.7" showNum="1"></trailer-stars>
 				</view>
 			</view>
 			<view class="single-poster">
@@ -50,16 +43,7 @@
 					<view class="movie-name">
 						深海食人鲨
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							8.9
-						</view>
-					</view>
+					<trailer-stars innerScore="6.6" showNum="1"></trailer-stars>
 				</view>
 			</view>
 			<view class="single-poster">
@@ -68,16 +52,7 @@
 					<view class="movie-name">
 						洋葱头历险记
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							9.3
-						</view>
-					</view>
+					<trailer-stars innerScore="8.9" showNum="1"></trailer-stars>
 				</view>
 			</view>
 			<view class="single-poster">
@@ -86,16 +61,7 @@
 					<view class="movie-name">
 						美女与野兽
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							8.6
-						</view>
-					</view>
+					<trailer-stars innerScore="8.2" showNum="1"></trailer-stars>
 				</view>
 			</view>
 			<view class="single-poster">
@@ -104,16 +70,7 @@
 					<view class="movie-name">
 						大师的寂寞
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							9.0
-						</view>
-					</view>
+					<trailer-stars innerScore="5.6" showNum="1"></trailer-stars>
 				</view>
 			</view>
 			<view class="single-poster">
@@ -122,23 +79,19 @@
 					<view class="movie-name">
 						总有一次哭泣让你瞬间长大
 					</view>
-					<view class="movie-score-wapper">
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-yellow.png" class="star-ico"></image>
-						<image src="../../static/icons/Star-huise.png" class="star-ico"></image>
-						<view class="movie-score">
-							9.4
-						</view>
-					</view>
+					<trailer-stars innerScore="7.3" showNum="1"></trailer-stars>
 				</view>
 			</view>
 		</scroll-view>
+		
+
 	</view>
 </template>
 
 <script>
+	import helloComp from "../../components/helloComp.vue"
+	import trailerStars from "../../components/trailerStars"
+	
 	export default {
 		data() {
 			return {
@@ -156,6 +109,10 @@
 		},
 		methods: {
 
+		},
+		components: {
+			helloComp,
+			trailerStars
 		}
 	}
 </script>

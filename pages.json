@@ -16,6 +16,14 @@
             "path" : "pages/mine/mine",
             "style" : {}
         }
+        ,{
+            "path" : "components/helloComp",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/trailerStars",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
