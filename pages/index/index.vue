@@ -101,7 +101,7 @@
 				<image src="../../static/poster/justice.png" class="like-movie"></image>
 				<view class="movie-desc">
 					<view class="movie-title">
-						正义联盟正义联盟正义联盟正义联盟正义联盟正义联盟
+						正义联盟
 					</view>
 					<trailer-stars innerScore="9.1" showNum="1"></trailer-stars>
 					<view class="movie-info">
@@ -111,16 +111,39 @@
 						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
 					</view>
 				</view>
-				<view class="movie-oper" @click="praiseMe">
+				<view class="movie-oper" @click="praiseMe(0)">
 					<image src="../../static/icons/praise.png" class="praise-ico"></image>
 					<view class="praise-me">
 						赞一下
 					</view>
-					<view :animation="animationData" class="praise-me animation-opacity">
+					<view :animation="animationDataArr[0]" class="praise-me animation-opacity">
 						+1
 					</view>
 				</view>
-				
+			</view>
+			<view class="single-like-movie">
+				<image src="../../static/poster/civilwar.jpg" class="like-movie"></image>
+				<view class="movie-desc">
+					<view class="movie-title">
+						美国队长3
+					</view>
+					<trailer-stars innerScore="9.1" showNum="1"></trailer-stars>
+					<view class="movie-info">
+						2018 / 动作 / 科幻 / 冒险
+					</view>
+					<view class="movie-info">
+						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
+					</view>
+				</view>
+				<view class="movie-oper" @click="praiseMe(1)">
+					<image src="../../static/icons/praise.png" class="praise-ico"></image>
+					<view class="praise-me">
+						赞一下
+					</view>
+					<view :animation="animationDataArr[1]" class="praise-me animation-opacity">
+						+1
+					</view>
+				</view>
 			</view>
 		</view>
 	</view>
@@ -133,7 +156,10 @@
 	export default {
 		data() {
 			return {
-				animationData: {}
+				animationData: {},
+				animationDataArr: [
+					{}, {}, {}, {}
+				]
 			}
 		},
 		onUnload() {
@@ -156,19 +182,21 @@
 		},
 		methods: {
 			//实现点赞动画效果
-			praiseMe() {
+			praiseMe(e) {
 				//构建动画数据，并且通过step来表示这组动画的完成
 				this.animation.translateY(-65).opacity(1).step({
 					duration:450
 					});
-				this.animationData = this.animation.export();
+				this.animationData = this.animation;
+				this.animationDataArr[e] = this.animationData.export();
 				
 				//还原动画
 				setTimeout(function() {
 					this.animation.translateY(0).opacity(0).step({
 						duration: 0
 					});
-					this.animationData = this.animation.export();
+					this.animationData = this.animation
+					this.animationDataArr[e] = this.animationData.export();
 				}.bind(this), 500);
 			}
 		},
