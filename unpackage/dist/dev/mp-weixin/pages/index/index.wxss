@@ -86,3 +86,81 @@
 	text-overflow: ellipsis;
 }
 
+/* 猜你喜欢 */
+.guess-u-like {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.single-like-movie {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	        align-items: stretch;
+	padding: 0 20rpx 30rpx 20rpx;
+}
+.like-movie {
+	width: 180rpx;
+	height: 240rpx;
+	border-radius: 3%;
+}
+.movie-desc {
+	width: 340rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.movie-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.movie-info {
+	color: #808080;
+	font-size: 14px;
+}
+
+/* 点赞css */
+.movie-oper {
+	width: 140rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-left: 2px dashed #dbdbda;
+}
+.praise-ico {
+	width: 40rpx;
+	height: 40rpx;
+}
+.praise-me {
+	font-size: 14px;
+	color: #feab2a;
+}
+

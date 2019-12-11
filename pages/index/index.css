@@ -54,3 +54,61 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+
+/* 猜你喜欢 */
+
+.guess-u-like {
+	display: flex;
+	flex-direction: column;
+}
+
+.single-like-movie {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 0 20upx 30upx 20upx;
+}
+
+.like-movie {
+	width: 180upx;
+	height: 240upx;
+	border-radius: 3%;
+}
+
+.movie-desc {
+	width: 340upx;
+	display: flex;
+	flex-direction: column;
+}
+
+.movie-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.movie-info {
+	color: #808080;
+	font-size: 14px;
+}
+
+/* 点赞css */
+.movie-oper {
+	width: 140upx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-left: 2px dashed #dbdbda;
+}
+
+.praise-ico {
+	width: 40upx;
+	height: 40upx;
+}
+
+.praise-me {
+	font-size: 14px;
+	color: #feab2a;
+}

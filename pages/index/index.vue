@@ -84,6 +84,44 @@
 			</view>
 		</scroll-view>
 		
+		
+		<!-- 猜你喜欢 -->
+		<view class="page-block hot">
+			<view class="hot-title-wapper">
+				<image src="../../static/icons/guess-u-like.png" class="hot-icon"></image>
+				<view class="hot-title">
+					猜你喜欢
+				</view>
+			</view>
+		</view>
+		
+		<view class="page-block guess-u-like">
+			
+			<view class="single-like-movie">
+				<image src="../../static/poster/justice.png" class="like-movie"></image>
+				<view class="movie-desc">
+					<view class="movie-title">
+						正义联盟正义联盟正义联盟正义联盟正义联盟正义联盟
+					</view>
+					<trailer-stars innerScore="9.1" showNum="1"></trailer-stars>
+					<view class="movie-info">
+						2018 / 动作 / 科幻 / 奇幻
+					</view>
+					<view class="movie-info">
+						 本·阿弗莱克 / 亨利·卡维尔 / 盖尔·加朵 / 埃兹拉·米勒 / 杰森·莫玛
+					</view>
+				</view>
+				<view class="movie-oper">
+					<image src="../../static/icons/praise.png" class="praise-ico"></image>
+					<view class="praise-me">
+						赞一下
+					</view>
+				</view>
+				
+			</view>
+			
+		</view>
+		
 
 	</view>
 </template>
