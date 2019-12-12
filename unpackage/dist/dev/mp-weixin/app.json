@@ -4,7 +4,8 @@
     "pages/search/search",
     "pages/mine/mine",
     "components/helloComp",
-    "components/trailerStars"
+    "components/trailerStars",
+    "pages/movie/movie"
   ],
   "subPackages": [],
   "window": {

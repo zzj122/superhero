@@ -164,7 +164,8 @@
 		},
 		onUnload() {
 			//页面卸载的时候  清除动画数据
-			this.animationData = {}
+			this.animationData = {},
+			this.animationDataArr = [ {}, {}, {}, {}]
 		},
 		onLoad() {
 			

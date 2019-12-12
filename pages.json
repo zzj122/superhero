@@ -5,12 +5,15 @@
 			"style": {
 				"app-plus": {
 					"titleNView": false
-				}
+				},
+			"enablePullDownRefresh": true //开启单页面下拉刷新功能
 			}
 		}
 	    ,{
             "path" : "pages/search/search",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText": "搜索预告片"
+			}
         }
         ,{
             "path" : "pages/mine/mine",
@@ -22,6 +25,10 @@
         }
         ,{
             "path" : "components/trailerStars",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/movie/movie",
             "style" : {}
         }
     ],
